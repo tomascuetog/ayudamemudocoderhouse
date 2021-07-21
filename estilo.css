@@ -1,0 +1,416 @@
+* {margin:0;
+padding:0;}
+
+a {text-decoration: none;
+color:rgb(61, 60, 60);
+}
+
+body{font-family: 'Montserrat', sans-serif;}
+
+.btn-secondary {background-color: #B4E2C4;color:black;border:none;}
+
+@media only screen and (max-width: 600px) 
+
+{
+
+    #menu 
+    
+    {   background-color: #B4E2C4;
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+        height: 250px;
+        grid-template-areas: "INICIO" 
+        "COCINA" 
+        "DORMITORIO"
+        "LIVING"
+        "CONTACTO"
+    }
+    
+    #INICIO:hover
+    
+    {
+     grid-area: INICIO;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+    #COCINA:hover
+    
+    {
+     grid-area: COCINA;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+    #DORMITORIO:hover
+    
+    {
+     grid-area: DORMITORIO;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+    #LIVING:hover
+    
+    {
+     grid-area: LIVING;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+
+    .btn-secondary:hover
+    
+    {
+     grid-area: COCINA;   
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     background-color: #B4E2C4;
+     border-color: none;
+     border:none;
+    
+     }
+    
+   
+    #CONTACTO:hover
+    
+    {
+     grid-area: CONTACTO;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+    #QueHacemos
+    
+    { background-image: url("imagenes/fondococina.jpg");
+        background-size: cover;
+        color: rgb(61, 60, 60);
+        font-weight: bolder;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px;
+        height: 300px;
+        grid-template-areas: "QueHacemos";
+        font-size: 16px;
+    }
+    
+    #footer
+    {
+        background-color: #B4E2C4;
+        display: flex;
+        flex-flow: row, wrap ;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        height: 100px;
+        grid-template-areas: "INSTAGRAM FACEBOOK TWITTER" 
+    }
+
+    #instagram
+    {   grid-area: INSTAGRAM;
+        height: 20px;
+        width: 20px;
+            }
+
+    #facebook
+    {   grid-area: FACEBOOK;
+        height: 20px;
+        width: 20px;
+    }
+
+    #twitter
+    {   grid-area: TWITTER;
+        height: 30px;
+        width: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) 
+
+{
+
+    #menu 
+    
+    {   background-color: #B4E2C4;
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 100px;
+        height: 100px;
+        grid-template-areas: "INICIO COCINA DORMITORIO LIVING CONTACTO";
+    }
+
+    #INICIO:hover
+    
+    {
+     grid-area: INICIO;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+    #COCINA:hover
+    
+    {
+     grid-area: COCINA;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+    #DORMITORIO:hover
+    
+    {
+     grid-area: DORMITORIO;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+    #LIVING:hover
+    
+    {
+     grid-area: LIVING;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+    
+    
+    .btn-secondary:hover
+    
+    {
+     grid-area: COCINA;   
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     background-color: #B4E2C4;
+     border:none;
+     }
+    
+ 
+   
+    #CONTACTO:hover
+    
+    {
+     grid-area: CONTACTO;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+    
+    #QueHacemos
+    
+    { background-image: url("imagenes/fondococina.jpg");
+        background-size: cover;
+        color: rgb(61, 60, 60);
+        font-weight: bolder;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px;
+        height: 400px;
+        grid-template-areas: "QueHacemos";
+        font-size: 30px;
+        
+    }
+    
+    #footer
+    {   background-color: #B4E2C4;
+        display: flex;
+        flex-flow: row, wrap ;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        height: 150px;
+        grid-template-areas: "INSTAGRAM FACEBOOK TWITTER" 
+    }
+    #instagram
+    {   grid-area: INSTAGRAM;
+        height: 40px;
+        width: 40px;
+            }
+
+    #facebook
+    {   grid-area: FACEBOOK;
+        height: 40px;
+        width: 40px;
+    }
+
+    #twitter
+    {   grid-area: TWITTER;
+        height: 50px;
+        width: 50px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1024px) 
+
+{
+
+    #menu 
+    
+    {   background-color: #B4E2C4;
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 150px;
+        height: 150px;
+        grid-template-areas: "INICIO COCINA DORMITORIO LIVING CONTACTO";
+    }
+
+    #INICIO:hover
+    
+    {
+     grid-area: INICIO;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+    #COCINA:hover
+    
+    {
+     grid-area: COCINA;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+    #DORMITORIO:hover
+    
+    {
+     grid-area: DORMITORIO;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+    #LIVING:hover
+    
+    {
+     grid-area: LIVING;
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     
+    }
+
+    .btn-secondary:hover
+    
+    {
+     grid-area: COCINA;   
+     text-align: center;
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+     background-color: #B4E2C4;
+     border:none;
+     }
+      
+    #CONTACTO:hover
+    
+    {
+     grid-area: CONTACTO;
+     text-align: center; 
+     color: rgb(235, 146, 64);
+     font-size: 20px;
+     font-weight: bolder;
+    }
+
+    #QueHacemos
+    
+    { background-image: url("imagenes/fondococina.jpg");
+        background-size: cover;
+        color: rgb(61, 60, 60);
+        font-weight: bolder;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px;
+        height: 600px;
+        grid-template-areas: "QueHacemos";
+        font-size: 40px;
+    }
+    
+    #footer
+    {   background-color: #B4E2C4;
+        display: flex;
+        flex-flow: row, wrap ;
+        justify-content: space-evenly;
+        align-content: space-between;
+        align-items: center;
+        height: 200px;
+        grid-template-areas: "INSTAGRAM FACEBOOK TWITTER" 
+    }
+
+    #instagram
+    {   grid-area: INSTAGRAM;
+        height: 50px;
+        width: 50px;
+            }
+
+    #facebook
+    {   grid-area: FACEBOOK;
+        height: 50px;
+        width: 50px;
+    }
+
+    #twitter
+    {   grid-area: TWITTER;
+        height: 60px;
+        width: 60px;
+    }
+
+}
